@@ -1,0 +1,61 @@
+@@include('./partials/header.html/')
+
+<body class="bg-gray-200">
+    @@include('./partials/navbar.html/')
+
+    <div class="mx-auto py-20 max-w-2xl">
+        <img class="shadow transition-shadow duration-500 rounded hover:shadow-lg mb-10" src="img/cover.jpg" alt="Gulp with TailwindCSS">
+        <div class="instructions">
+            <div class="mb-20 text-gray-700">
+                <h4 class="sub-title">Usage</h4>
+                <p>Use the following commands to get started.</p>
+                <code class="code transform translate-x-[20px]">
+                    <em>// To Install Dev Depedencies</em><br/>
+                    npm install<br/><br/>
+
+                    <em>// To start development and server for live preview</em><br/>
+                    npm run dev<br/><br/>
+
+                    <em>// To generate minifed,optamized files for production server</em><br/>
+                    npm run prod
+                </code>
+            </div>
+
+            <div class="mb-10 text-gray-600">
+                    <h4 class="sub-title">Options</h4>
+                    <p>To change the path of files and destination/build folder configure at <b class="font-bold">config.js</b> file</p>
+                    <!-- Ignore the messay code :P only for demo -->
+<code class="code pre transform translate-x-[-20px]">config: {
+    ...
+    port: 9050 <em>//Update port here</em>
+},
+paths: {
+    root: "./",
+    src: {
+        base: "./src",
+        css: "./src/css",
+        js: "./src/js",
+        img: "./src/img"
+    },
+    dist: {
+        base: "./dist",
+        css: "./dist/css",
+        js: "./dist/js",
+        img: "./dist/img"
+    },
+    build: {
+        base: "./build",
+        css: "./build/css",
+        js: "./build/js",
+        img: "./build/img"
+    }
+}
+</code>
+                </div>
+
+        </div>
+        @@include('./partials/footer.html/')
+
+
+</body>
+</html>
